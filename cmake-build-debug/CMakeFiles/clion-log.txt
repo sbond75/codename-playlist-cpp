@@ -1,0 +1,4 @@
+/home/sebastian/Downloads/Vanderbilt_University/Sophomore_Semester_1/CS3251/clion-2019.2.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/clang-6.0 -DCMAKE_CXX_COMPILER=/usr/bin/clang++-6.0 -G "CodeBlocks - Unix Makefiles" /media/sebastian/Shared/Projects/Collaboration/Codename_Playlist_Cpp
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /media/sebastian/Shared/Projects/Collaboration/Codename_Playlist_Cpp/cmake-build-debug

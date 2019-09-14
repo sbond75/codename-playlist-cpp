@@ -1,0 +1,1 @@
+/usr/bin/clang++-6.0  -g   CMakeFiles/Codename_Playlist_Cpp.dir/main.cpp.o  -o Codename_Playlist_Cpp 

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/sebastian/Shared/Projects/Collaboration/Codename_Playlist_Cpp/main.cpp
+iostream
+-
+SDL2/SDL.h
+-
+SDL2/SDL_mixer.h
+-
+signal.h
+-
+

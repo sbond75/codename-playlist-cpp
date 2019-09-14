@@ -1,0 +1,3 @@
+/media/sebastian/Shared/Projects/Collaboration/Codename_Playlist_Cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/media/sebastian/Shared/Projects/Collaboration/Codename_Playlist_Cpp/cmake-build-debug/CMakeFiles/project6.dir
+/media/sebastian/Shared/Projects/Collaboration/Codename_Playlist_Cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
