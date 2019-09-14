@@ -13,6 +13,7 @@
 // https://stackoverflow.com/questions/7469139/what-is-the-equivalent-to-getch-getche-in-linux
 #include <unistd.h>
 #include <termios.h>
+#include <cstring>
 
 char getch(void)
 {

@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/media/sebastian/Shared/Projects/Collaboration/Codename_Playlist_Cpp/filesystem.h
+string
+-
+vector
+-
+filesystem
+-
+
 /media/sebastian/Shared/Projects/Collaboration/Codename_Playlist_Cpp/getch.h
 conio.h
 -
@@ -13,14 +21,24 @@ unistd.h
 -
 termios.h
 -
+cstring
+-
 
 /media/sebastian/Shared/Projects/Collaboration/Codename_Playlist_Cpp/main.cpp
-iostream
--
+filesystem.h
+/media/sebastian/Shared/Projects/Collaboration/Codename_Playlist_Cpp/filesystem.h
+getch.h
+/media/sebastian/Shared/Projects/Collaboration/Codename_Playlist_Cpp/getch.h
 SDL2/SDL.h
 -
 SDL2/SDL_mixer.h
 -
-getch.h
-/media/sebastian/Shared/Projects/Collaboration/Codename_Playlist_Cpp/getch.h
+algorithm
+-
+iostream
+-
+random
+-
+unordered_map
+-
 

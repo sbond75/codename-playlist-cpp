@@ -17,4 +17,4 @@ set(SOURCE_FILES
 
 add_executable(project6 ${SOURCE_FILES})
 
-target_link_libraries(project6 openal SDL2 SDL2_mixer)
+target_link_libraries(project6 openal SDL2 SDL2_mixer stdc++fs)
