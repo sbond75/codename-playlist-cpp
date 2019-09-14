@@ -18,11 +18,17 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/sebastian/Downloads/Vanderbilt_University/Sophomore_Semester_1/CS3251/clion-2019.2.1/bin/cmake/linux/share/cmake-3.14/Modules/CMakeLanguageInformation.cmake"
   "/home/sebastian/Downloads/Vanderbilt_University/Sophomore_Semester_1/CS3251/clion-2019.2.1/bin/cmake/linux/share/cmake-3.14/Modules/CMakeSystemSpecificInformation.cmake"
   "/home/sebastian/Downloads/Vanderbilt_University/Sophomore_Semester_1/CS3251/clion-2019.2.1/bin/cmake/linux/share/cmake-3.14/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/home/sebastian/Downloads/Vanderbilt_University/Sophomore_Semester_1/CS3251/clion-2019.2.1/bin/cmake/linux/share/cmake-3.14/Modules/CheckIncludeFile.cmake"
+  "/home/sebastian/Downloads/Vanderbilt_University/Sophomore_Semester_1/CS3251/clion-2019.2.1/bin/cmake/linux/share/cmake-3.14/Modules/CheckLibraryExists.cmake"
+  "/home/sebastian/Downloads/Vanderbilt_University/Sophomore_Semester_1/CS3251/clion-2019.2.1/bin/cmake/linux/share/cmake-3.14/Modules/CheckSymbolExists.cmake"
   "/home/sebastian/Downloads/Vanderbilt_University/Sophomore_Semester_1/CS3251/clion-2019.2.1/bin/cmake/linux/share/cmake-3.14/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/home/sebastian/Downloads/Vanderbilt_University/Sophomore_Semester_1/CS3251/clion-2019.2.1/bin/cmake/linux/share/cmake-3.14/Modules/Compiler/Clang-C.cmake"
   "/home/sebastian/Downloads/Vanderbilt_University/Sophomore_Semester_1/CS3251/clion-2019.2.1/bin/cmake/linux/share/cmake-3.14/Modules/Compiler/Clang-CXX.cmake"
   "/home/sebastian/Downloads/Vanderbilt_University/Sophomore_Semester_1/CS3251/clion-2019.2.1/bin/cmake/linux/share/cmake-3.14/Modules/Compiler/Clang.cmake"
   "/home/sebastian/Downloads/Vanderbilt_University/Sophomore_Semester_1/CS3251/clion-2019.2.1/bin/cmake/linux/share/cmake-3.14/Modules/Compiler/GNU.cmake"
+  "/home/sebastian/Downloads/Vanderbilt_University/Sophomore_Semester_1/CS3251/clion-2019.2.1/bin/cmake/linux/share/cmake-3.14/Modules/FindPackageHandleStandardArgs.cmake"
+  "/home/sebastian/Downloads/Vanderbilt_University/Sophomore_Semester_1/CS3251/clion-2019.2.1/bin/cmake/linux/share/cmake-3.14/Modules/FindPackageMessage.cmake"
+  "/home/sebastian/Downloads/Vanderbilt_University/Sophomore_Semester_1/CS3251/clion-2019.2.1/bin/cmake/linux/share/cmake-3.14/Modules/FindThreads.cmake"
   "/home/sebastian/Downloads/Vanderbilt_University/Sophomore_Semester_1/CS3251/clion-2019.2.1/bin/cmake/linux/share/cmake-3.14/Modules/Internal/CMakeCheckCompilerFlag.cmake"
   "/home/sebastian/Downloads/Vanderbilt_University/Sophomore_Semester_1/CS3251/clion-2019.2.1/bin/cmake/linux/share/cmake-3.14/Modules/Platform/Linux-Clang-C.cmake"
   "/home/sebastian/Downloads/Vanderbilt_University/Sophomore_Semester_1/CS3251/clion-2019.2.1/bin/cmake/linux/share/cmake-3.14/Modules/Platform/Linux-Clang-CXX.cmake"
@@ -36,6 +42,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.14.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.14.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.14.5/CMakeSystem.cmake"
+  "../cmake/sdl2/FindSDL2.cmake"
+  "../cmake/sdl2/FindSDL2_mixer.cmake"
   )
 
 # The corresponding makefile is:

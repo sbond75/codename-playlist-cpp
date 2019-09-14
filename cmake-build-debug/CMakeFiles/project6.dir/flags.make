@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++17 -Wall -Werror -Wextra -pedantic -pedantic-errors -g -mar
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -isystem /usr/include/SDL2 
 

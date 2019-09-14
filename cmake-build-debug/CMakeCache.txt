@@ -219,6 +219,33 @@ ProcessorCount_cmd_getconf:FILEPATH=/usr/bin/getconf
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/sbin/sysctl
 
+//Where the SDL2main library can be found
+SDL2MAIN_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libSDL2main.a
+
+//Where the SDL2 headers can be found
+SDL2_INCLUDE_DIR:PATH=/usr/include/SDL2
+
+//Where the SDL2 Library can be found
+SDL2_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libSDL2.so
+
+//Where the SDL2_mixer headers can be found
+SDL2_MIXER_INCLUDE_DIR:PATH=/usr/include/SDL2
+
+//Where the SDL2_mixer Library can be found
+SDL2_MIXER_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libSDL2_mixer.so
+
+//Disable search SDL2_mixer Library in default path
+SDL2_MIXER_NO_DEFAULT_PATH:BOOL=OFF
+
+//Custom SDL2_mixer Library path
+SDL2_MIXER_PATH:STRING=
+
+//Disable search SDL2 Library in default path
+SDL2_NO_DEFAULT_PATH:BOOL=OFF
+
+//Custom SDL2 Library path
+SDL2_PATH:STRING=
+
 //Value Computed by CMake
 project6_BINARY_DIR:STATIC=/media/sebastian/Shared/Projects/Collaboration/Codename_Playlist_Cpp/cmake-build-debug
 
@@ -312,6 +339,14 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Have symbol pthread_create
+CMAKE_HAVE_LIBC_CREATE:INTERNAL=
+//Have library pthreads
+CMAKE_HAVE_PTHREADS_CREATE:INTERNAL=
+//Have library pthread
+CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=1
+//Have include pthread.h
+CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/media/sebastian/Shared/Projects/Collaboration/Codename_Playlist_Cpp
@@ -375,8 +410,32 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding SDL2
+FIND_PACKAGE_MESSAGE_DETAILS_SDL2:INTERNAL=[/usr/lib/x86_64-linux-gnu/libSDL2.so][/usr/include/SDL2][v2.0.8()]
+//Details about finding SDL2_mixer
+FIND_PACKAGE_MESSAGE_DETAILS_SDL2_mixer:INTERNAL=[/usr/lib/x86_64-linux-gnu/libSDL2_mixer.so][/usr/include/SDL2][v2.0.2()]
+//Details about finding SDL2main
+FIND_PACKAGE_MESSAGE_DETAILS_SDL2main:INTERNAL=[/usr/lib/x86_64-linux-gnu/libSDL2main.a][/usr/include/SDL2][v2.0.8()]
 //ADVANCED property for variable: ProcessorCount_cmd_getconf
 ProcessorCount_cmd_getconf-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
 ProcessorCount_cmd_sysctl-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: SDL2MAIN_LIBRARY
+SDL2MAIN_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: SDL2_INCLUDE_DIR
+SDL2_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: SDL2_LIBRARY
+SDL2_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: SDL2_MIXER_INCLUDE_DIR
+SDL2_MIXER_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: SDL2_MIXER_LIBRARY
+SDL2_MIXER_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: SDL2_MIXER_NO_DEFAULT_PATH
+SDL2_MIXER_NO_DEFAULT_PATH-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: SDL2_MIXER_PATH
+SDL2_MIXER_PATH-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: SDL2_NO_DEFAULT_PATH
+SDL2_NO_DEFAULT_PATH-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: SDL2_PATH
+SDL2_PATH-ADVANCED:INTERNAL=1
 

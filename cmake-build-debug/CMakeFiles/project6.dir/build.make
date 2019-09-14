@@ -79,6 +79,9 @@ project6_EXTERNAL_OBJECTS =
 
 ../project6: CMakeFiles/project6.dir/main.cpp.o
 ../project6: CMakeFiles/project6.dir/build.make
+../project6: /usr/lib/x86_64-linux-gnu/libSDL2_mixer.so
+../project6: /usr/lib/x86_64-linux-gnu/libSDL2main.a
+../project6: /usr/lib/x86_64-linux-gnu/libSDL2.so
 ../project6: CMakeFiles/project6.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/sebastian/Shared/Projects/Collaboration/Codename_Playlist_Cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../project6"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project6.dir/link.txt --verbose=$(VERBOSE)

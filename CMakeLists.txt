@@ -15,21 +15,14 @@ set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -march=native -D_GLIBCXX_DEB
 set(SOURCE_FILES
         main.cpp)
 
-#sdl
+#submodules
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/sdl2)
+
+# Find SDL2, SDL2_mixer libraries
 find_package(SDL2 REQUIRED)
-include_directories(${SDL2_INCLUDE_DIRS})
-
-#sdl mixer
-find_library(SDL_MIXER_LIBRARY
-        NAMES SDL2_mixer
-        HINTS
-        ENV SDLMIXERDIR
-        ENV SDLDIR
-        PATH_SUFFIXES lib
-        )
-include_directories(${SDL2_INCLUDE_DIRS})
-
+find_package(SDL2_mixer REQUIRED)
 
 add_executable(project6 ${SOURCE_FILES})
 
-target_link_libraries(project6 SDL2 SDL2_mixer stdc++fs)
+# Link SDL2::Main, SDL2::Mixer, and stdc++fs (for std::filesystem) to our project
+target_link_libraries(${PROJECT_NAME} SDL2::Main SDL2::Mixer stdc++fs)
