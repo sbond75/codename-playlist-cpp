@@ -1,1 +1,1 @@
-/usr/bin/clang++-6.0   -std=c++17 -Wall -Werror -Wextra -pedantic -pedantic-errors -g -march=native -D_GLIBCXX_DEBUG   CMakeFiles/project6.dir/main.cpp.o  -o ../project6 -lopenal -lSDL2 -lSDL2_mixer -lstdc++fs 
+/usr/bin/clang++-6.0   -std=c++17 -Wall -Werror -Wextra -pedantic -pedantic-errors -g -march=native -D_GLIBCXX_DEBUG   CMakeFiles/project6.dir/main.cpp.o  -o ../project6 -lSDL2 -lSDL2_mixer -lstdc++fs 

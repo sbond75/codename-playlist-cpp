@@ -15,6 +15,21 @@ set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -march=native -D_GLIBCXX_DEB
 set(SOURCE_FILES
         main.cpp)
 
+#sdl
+find_package(SDL2 REQUIRED)
+include_directories(${SDL2_INCLUDE_DIRS})
+
+#sdl mixer
+find_library(SDL_MIXER_LIBRARY
+        NAMES SDL2_mixer
+        HINTS
+        ENV SDLMIXERDIR
+        ENV SDLDIR
+        PATH_SUFFIXES lib
+        )
+include_directories(${SDL2_INCLUDE_DIRS})
+
+
 add_executable(project6 ${SOURCE_FILES})
 
-target_link_libraries(project6 openal SDL2 SDL2_mixer stdc++fs)
+target_link_libraries(project6 SDL2 SDL2_mixer stdc++fs)

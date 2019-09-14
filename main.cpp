@@ -7,7 +7,18 @@
 #include <random>
 #include <unordered_map>
 
-int main() {
+int main(int argc, char* argv[]) {
+  fs::path source;
+  if (argc == 1) {
+    source = fs::current_path();
+    std::cout << "No directory argument given, using current directory's "
+                 "music files: " << source << std::endl;
+  }
+  else {
+    source = fs::path(argv[1]);
+    std::cout << "Using given path's music files: " << source << std::endl;
+  }
+  
   //use SDL because it supports 32 bit audio
   SDL_Init(SDL_INIT_AUDIO | SDL_INIT_TIMER);
   
@@ -17,10 +28,8 @@ int main() {
     return 1;
   }
   
-  fs::path p("/media/sebastian/Shared/Projects/Collaboration"
-             "/Codename_Playlist/playlist/playlist/Season 1/Season 1/");
   std::vector<fs::path> files;
-  get_all(p, ".mp3", files);
+  get_all(source, ".mp3", files);
   
   if (files.size() == 0) {
     puts("No music found. Exiting.");
@@ -37,6 +46,7 @@ int main() {
   //std::sort( files.begin(), files.end() );
 
   auto printPlaylist = [&]() {
+    puts("Current playlist:");
     for (const fs::path& p : files) {
       std::cout << p << std::endl;
     }
@@ -83,8 +93,18 @@ int main() {
     skip();
   };
   
+  auto printInstructions = []() {
+    puts(R"(Press:
+  - p to pause
+  - n to skip to the next song
+  - s to shuffle
+  - q to quit)");
+  };
+  
   char userChoice;
   do {
+    fputs("\n", stdout); //Print a newline to separate this output
+    printInstructions();
     userChoice = getch();
     switch (userChoice) {
     case 'p': //pause
