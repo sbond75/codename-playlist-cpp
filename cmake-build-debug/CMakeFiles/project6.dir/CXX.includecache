@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/media/sebastian/Shared/Projects/Collaboration/Codename_Playlist_Cpp/getch.h
+conio.h
+-
+unistd.h
+-
+termios.h
+-
+
 /media/sebastian/Shared/Projects/Collaboration/Codename_Playlist_Cpp/main.cpp
 iostream
 -
@@ -13,6 +21,6 @@ SDL2/SDL.h
 -
 SDL2/SDL_mixer.h
 -
-signal.h
--
+getch.h
+/media/sebastian/Shared/Projects/Collaboration/Codename_Playlist_Cpp/getch.h
 

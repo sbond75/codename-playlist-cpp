@@ -1,29 +1,9 @@
 #include <iostream>
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_mixer.h>
-
-#include <signal.h>
-
-static void s_signal_handler (int signal_value)
-{
-  if (signal_value == SIGINT) {
-    puts("A");
-  }
-}
-
-static void s_catch_signals (void)
-{
-  struct sigaction action;
-  action.sa_handler = s_signal_handler;
-  action.sa_flags = 0;
-  sigemptyset (&action.sa_mask);
-  sigaction (SIGINT, &action, NULL);
-  sigaction (SIGTERM, &action, NULL);
-}
+#include "getch.h"
 
 int main() {
-  s_catch_signals ();
-  
   //use SDL because it supports 32 bit audio
   SDL_Init(SDL_INIT_AUDIO | SDL_INIT_TIMER);
   
@@ -35,7 +15,6 @@ int main() {
   
   Mix_Music* music = Mix_LoadMUS( "/media/sebastian/Shared/Projects/Collaboration/Codename_Playlist/playlist/playlist/Season 1/Season 1/Episode 1 - Go Into My Hole.mp3" );
 
-
   // If there is no music playing
   if (Mix_PlayingMusic() == 0) {
     // Play the music
@@ -43,11 +22,21 @@ int main() {
       return 1;
     }
   }
-  
-  while (true) {
-    
-    SDL_Delay(16);
-  }
+
+  char userChoice;
+  do {
+    userChoice = getch();
+    switch (userChoice) {
+    case 'p':
+      if (Mix_PausedMusic() == 0) {
+        Mix_PauseMusic();
+      }
+      else {
+        Mix_ResumeMusic();
+      }
+      break;
+    }
+  } while (userChoice != 'q');
   
   //While the user hasn't quit
 //  bool quit = false;
